@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsnd --exit-child src/server.ts",
-    "start": "node src/server.ts"
+    "start": "node src/server.js"
   },
   "keywords": [],
   "author": "Lucas Cercal Fontes",
