@@ -8,7 +8,7 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-const prisma = new PrismaClient()
+const prisma = new PrismaClient({ datasources: {  db: { url: "postgres://ilkjpfffuqiryr:d0200f32e6ff18a01c3431b88b5b0c2e8305ff75141b7f0f349cb997cc0f7fea@ec2-44-195-132-31.compute-1.amazonaws.com:5432/d8qqjlvuvgr3bs" } } })
 
 app.get('/games', async (request, response) => {
   const games = await prisma.game.findMany({
