@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "dev": "tsnd --exit-child src/server.ts",
