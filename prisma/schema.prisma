@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  url      = env("HEROKU_POSTGRESQL_BLUE_URL")
 }
 
 model Game {
@@ -12,7 +12,7 @@ model Game {
   title     String
   bannerUrl String
   ads       Ad[]
-}
+}   
 
 model Ad {
   id              String   @id @default(uuid())
